@@ -20,12 +20,10 @@ https://docs.google.com/spreadsheets/d/1FoKyh3dl2oBm__tCGDtOBsWRLcbvKP0Qkx0gL_7Z
 
 Команда для запуска всех тестов в пакете "tests":
 
-python -m pytest -v --driver Chrome --driver-path C:\chromedriver.exe tests
+python -m pytest -v --driver Chrome --driver-path C:/to/chromedriver.exe tests
 
 Команда для запуска отдельного теста, например, в файле test_reg_page_check.py:
 
-python -m pytest -v --driver Chrome --driver-path C:\chromedriver.exe tests\test_reg_page_check.py -k "test_reg_page_check_all_fields_text"
-
-В основной директории проекта файл screenshot_tests_run.png содержит скриншот терминала с результатом выполнения всех автотестов. Из 22 тестов 2 теста падают, т.к. есть сложности с многократной регистрацией в процессе отладки тестов.
+python -m pytest -v --driver Chrome --driver-path C:/to/chromedriver.exe tests\test_reg_page_check.py -k "test_reg_page_check_all_fields_text"
 
 Файл .env удален из индекса Git
