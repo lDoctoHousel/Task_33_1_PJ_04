@@ -26,4 +26,6 @@ python -m pytest -v --driver Chrome --driver-path C:/to/chromedriver.exe tests
 
 python -m pytest -v --driver Chrome --driver-path C:/to/chromedriver.exe tests\test_reg_page_check.py -k "test_reg_page_check_all_fields_text"
 
+ Из за трудностей с многократностью авторизации из 22 тестов работает 20.
+ 
 Файл .env удален из индекса Git
